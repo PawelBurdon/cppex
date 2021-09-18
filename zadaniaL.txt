@@ -1,0 +1,187 @@
+Zadanie 1
+#include <iostream>
+
+using namespace std;
+
+void dodaj(int a, int b);
+void odejmij(int x, int y);
+void razy (int i, int j);
+void podzielic(double n, double m);
+
+int main()
+{
+	dodaj(4 ,5);
+	odejmij(5 ,4);
+	razy(4 ,5);
+	podzielic(10 ,5);
+}
+
+void dodaj(int a, int b) {
+	cout << "Wynik dodawania: " << a + b << endl;
+}
+
+void odejmij(int x, int y) {
+	cout << "Wynik odejmowania: " << x - y << endl;
+}
+
+void razy(int i, int j) {
+	cout << "Wynik mnozenia: " << i * j << endl;
+}
+
+void podzielic(double n, double m) {
+	cout << "Wynik dzielenia: " << n / m << endl;
+}
+Zadanie 2
+#include <iostream>
+
+using namespace std;
+
+void prosto(int a, int b);
+void trapez(int x, int y);
+void trojkat(int i, int j);
+
+int main()
+{
+	prosto(2, 2);
+	trojkat(4, 4);
+	trapez(2, 4);
+}
+
+void prosto(int a, int b) {
+	cout << "Pole prostokata: " << a * b << endl;
+}
+void trapez(int x, int y) {
+	int h;
+	cout << "Podaj h: ";
+	cin >> h;
+	cout << "Pole trazpezu: " << ((x + y) * h) / 2 << endl;
+}
+void trojkat(int i, int j) {
+	
+	cout << "Pole trojkata: " << (i * j) / 2 << endl;
+}
+Zadanie 3
+#include <iostream>
+
+using namespace std;
+
+void potega(int a, int b);
+
+int main()
+{
+	potega(2, 5);
+}
+
+void potega(int a, int b) {
+	int wynik = 1;
+
+	for (int i = 0; i < b; i++) {
+		wynik *= a;
+	}
+	cout << wynik;
+}
+Zadanie 4
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int tab[2][2];
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			cout << "Podaj liczbe: ";
+			cin >> tab[i][j];
+		}
+	}
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			cout << tab[i][j] << " ";
+		}
+		cout << endl;
+	}
+	int mat = tab[0][0] * tab[1][1] - (tab[0][1] * tab[1][0]) ;
+	cout << mat;
+}
+Zadanie 5
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int tab[10][10];
+
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			if (i == j) {
+				tab[i][j] = 1;
+			}
+			else {
+				tab[i][j] = 0;
+			}
+		}
+	}
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			cout << tab[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+Zadanie 5
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int tab[10][10];
+
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			if (i == j) {
+				tab[i][j] = i;
+			}
+			else {
+				tab[i][j] = 0;
+			}
+		}
+	}
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			cout << tab[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+Zadanie 5
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int tab[10][10];
+
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			if (i+j == 9) {
+				tab[i][j] = 1;
+			}
+			else {
+				tab[i][j] = 0;
+			}
+		}
+	}
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			cout << tab[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+
+
+
