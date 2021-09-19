@@ -182,6 +182,31 @@ int main()
 		cout << endl;
 	}
 }
+Zadanie 6 - dodatkowe
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int tab[3][3];
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+				cout << "Podaj liczbe: ";
+				cin >> tab[i][j];
+			
+		}
+	}
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+				cout << tab[i][j] << " ";
+			
+		}
+		cout << endl;
+	}
+	int mat = tab[0][0] * tab[1][1] * tab[2][2] + tab[0][1] * tab[1][2] * tab[2][0] + tab[0][2] * tab[1][0] * tab[2][1] - (tab[2][0] * tab[1][1] * tab[0][2] + tab[2][1] * tab[1][2] * tab[0][0] + tab[2][2] * tab[1][0] * tab[0][1]);
+	cout << mat;
+}
 
 
 
