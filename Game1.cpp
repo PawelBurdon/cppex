@@ -9,7 +9,6 @@ int main()
 	srand(time(NULL));
 
 	int gracze, x[4], y[4], a = 0, b, e[4] = { 0 };
-	int punkty = 0;
 	string gracz[4], d;
 
 poczatek:
