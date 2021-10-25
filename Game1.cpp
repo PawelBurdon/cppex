@@ -91,8 +91,7 @@ poczatek:
 	}
 	cout << endl;
 	for (int i = 0; i < gracze; i++) {
-		if (e[i] > a)
-		{
+		if (e[i] > a){
 			a = e[i];
 			d = e[i];
 		}
